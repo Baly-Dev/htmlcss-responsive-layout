@@ -1,0 +1,111 @@
+/* css reset */
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* variables */
+:root{
+    --primary: #057AF7;
+    --primary-hover: #0062CA;
+    --primary-light: #A9D8FF;
+    --secondary: #8988DB;
+}
+
+/* globals */
+.boxed{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.boxed-sm{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+}
+
+.jc-between{
+    justify-content: space-between;
+}
+
+.jc-center{
+    justify-content: center;
+}
+
+.al-center{
+    align-items: center;
+}
+
+.als-center{
+    align-self: center;
+}
+
+.gap-10{
+    gap: 10px;
+}
+
+.gap-20{
+    gap: 20px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.mb-10{
+    margin-bottom: 10px;
+}
+
+.mb-20{
+    margin-bottom: 20px;
+}
+
+.mb-30{
+    margin-bottom: 30px;
+}
+
+.mb-40{
+    margin-bottom: 40px;
+}
+
+.mb-50{
+    margin-bottom: 50px;
+}
+
+.btn{
+    display: block;
+    padding: 12px 16px;
+    border-radius: 20px;
+    line-height: 1em;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+a.btn{
+    text-decoration: none;
+}
+
+.btn-white{
+    background-color: #fff;
+    color: #262626;
+}
+
+.btn-primary{
+    background-color: var(--primary);
+    color: #fff;
+}

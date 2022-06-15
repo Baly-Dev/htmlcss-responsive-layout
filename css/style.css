@@ -1,0 +1,126 @@
+/* header */
+header{
+    height: 70px;
+    line-height: 70px;
+    background-color: var(--primary);
+    margin-bottom: 60px;
+}
+
+header nav{
+    padding: 0px 20px;
+}
+
+header ul.row .nav-item{
+    display: none;
+}
+
+header li{
+    list-style: none;
+}
+
+header .logo{
+    color: #fff;
+    font-size: 30px;
+}
+
+header .mobile-menu{
+    color: #fff;
+    font-size: 25px;
+    line-height: 1em;
+}
+
+header li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+/* first section */
+.first-section .row.cards, .first-section .row.card{
+    flex-wrap: wrap;
+}
+
+.first-section .cards .col.card, .first-section .cards .tb.card{
+    width: 100%;
+}
+
+.first-section .cards{
+    padding: 0px 20px;
+}
+
+.first-section .card{
+    padding: 25px;
+    background-color: var(--primary-light);
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.first-section .card h3{
+    color: var(--primary);
+    font-size: 1.4em;
+}
+
+.first-section .card p{
+    line-height: 1.4em;
+    font-size: 1em;
+}
+
+.first-section .card .btn .ri-apple-fill{
+    margin-right: 2px;
+    font-size: 0.9em;
+}
+
+.first-section .card.tb .col{
+    width: 100%;
+}
+
+
+@media screen and (min-width: 768px){
+    /* first section */
+    .first-section .cards .tb.card{
+        width: calc(100% - (102% / 3));
+        justify-content: space-between;
+    }
+
+    .first-section .cards{
+        justify-content: space-between;
+    }
+
+    .first-section .cards .col.card{
+        width: calc(95% / 3);
+    }
+}
+
+
+@media screen and (min-width: 992px){
+    /* header */
+    header ul.row .nav-item{
+        display: block;
+    }
+
+    header ul.row .mobile-menu{
+        display: none;
+    }
+
+    /* first section */
+    .first-section .row.card{
+        flex-wrap: nowrap;
+        padding: 0;
+    }
+
+    .first-section .row.card .col{
+        flex-wrap: nowrap;
+        margin-bottom: 0px;
+        justify-content: center;
+        text-align: left;
+        align-items: flex-start;
+        padding: 0px 20px;
+    }
+
+    .first-section .row.card .col img{
+        padding-top: 30px;
+        width: 70%;
+    }
+
+    
+}
